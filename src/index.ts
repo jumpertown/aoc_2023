@@ -1,5 +1,6 @@
 import { solveDay1Part1, solveDay1Part2 } from "./day1";
-import { solveDay2Part1 as solveDay2Part1, solveDay2Part2 } from "./day2";
+import { solveDay2Part1, solveDay2Part2 } from "./day2";
+import { solveDay3Part1, solveDay3Part2 } from "./day3";
 import { readFileLines } from "./reader";
 
 // Day 1
@@ -13,3 +14,9 @@ const puzzleInputDay2 = readFileLines('./puzzle_inputs/input_day2.txt');
 console.log('Day 2');
 console.log(`Part 1: ${solveDay2Part1(puzzleInputDay2)}`);
 console.log(`Part 2: ${solveDay2Part2(puzzleInputDay2)}`);
+
+// Day 3
+const puzzleInputDay3 = readFileLines('./puzzle_inputs/input_day3.txt');
+console.log('Day 3');
+console.log(`Part 1: ${solveDay3Part1(puzzleInputDay3)}`);
+console.log(`Part 2: ${solveDay3Part2(puzzleInputDay3)}`);
