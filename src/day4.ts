@@ -40,7 +40,7 @@ export const parseLine = (line: string): scratchCard => {
   if (!match) throw new Error(`Invalid line: ${line}`);
 
   const cardNumber = parseInt(match[1]);
-  const picks = match[2].trim().split(' ').map((n) => parseInt(n));
+  const picks = match[2].trim().split(/\s+/).map((n) => parseInt(n));
   const winningNumbers = new Set(match[3].trim().split(/\s+/).map((n) => parseInt(n)));
 
   return { cardNumber, picks, winningNumbers };
