@@ -45,7 +45,7 @@ describe('solveDay5Part1', () => {
 });
 
 describe('solveDay5Part2', () => {
-  it.only('should return the correct result', () => {
+  it('should return the correct result', () => {
     const result = solveDay5Part2(testInput);
     expect(result).toEqual(46);
   });
