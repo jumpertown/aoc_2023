@@ -1,4 +1,4 @@
-import { solveDay9Part1, solveDay9Part2 } from "./day9";
+import { solveDay9Part1, solveDay9Part2 } from "../src/day9";
 
 const testInput = [
   '0 3 6 9 12 15',

@@ -1,4 +1,4 @@
-import { Maze, solveDay8Part1, solveDay8Part2Slow } from "./day8";
+import { Maze, solveDay8Part1, solveDay8Part2Slow } from "../src/day8";
 
 const testInputPart2 = [
   'LR',

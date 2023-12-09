@@ -7,7 +7,7 @@ import { solveDay6Part1, solveDay6Part2 } from "./day6";
 import { solveDay7Part1, solveDay7Part2 } from "./day7";
 import { solveDay8Part1, solveDay8Part2 } from "./day8";
 import { solveDay9Part1, solveDay9Part2 } from "./day9";
-import { readFileLines } from "./reader";
+import { readFileLines } from "./utils";
 
 // Day 1
 const puzzleInputDay1 = readFileLines('./puzzle_inputs/input_day1.txt');
@@ -60,11 +60,7 @@ console.log(`Part 2: ${solveDay7Part2(puzzleInputDay7)}`);
 const puzzleInputDay8 = readFileLines('./puzzle_inputs/input_day8.txt');
 console.log('Day 8');
 console.log(`Part 1: ${solveDay8Part1(puzzleInputDay8)}`);
-let start = Date.now();
-// Takes a long time to run...
-// ... but eventually yields 14321394058031
 console.log(`Part 2: ${solveDay8Part2(puzzleInputDay8)}`);
-console.log(`Part 2: ${Date.now() - start}ms`);
 
 // Day 9
 const puzzleInputDay9 = readFileLines('./puzzle_inputs/input_day9.txt');

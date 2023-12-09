@@ -1,4 +1,4 @@
-import { CardHand, parseLine, solveDay7Part1, solveDay7Part2 } from "./day7";
+import { CardHand, parseLine, solveDay7Part1, solveDay7Part2 } from "../src/day7";
 
 const testInput = [
   '32T3K 765',

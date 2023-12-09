@@ -1,4 +1,4 @@
-import { solveDay6Part1, solveDay6Part2, possibleHoldTimes } from './day6';
+import { solveDay6Part1, solveDay6Part2, possibleHoldTimes } from '../src/day6';
 
 describe('solveDay6Part1', () => {
   it('should return the correct result', () => {

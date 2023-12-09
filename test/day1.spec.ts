@@ -3,7 +3,7 @@ import {
   solveDay1Part2,
   encodeLinePart1,
   encodeLinePart2
-} from "./day1";
+} from "../src/day1";
 
 const testPart1=[
   '1abc2',

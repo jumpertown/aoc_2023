@@ -1,4 +1,15 @@
-import { Point } from './Point';
+import { Point, counter } from '../src/utils';
+
+describe('counter', () => {
+  it('should return the correct counts', () => {
+    const result = counter(['a', 'b', 'a', 'c', 'a', 'b']);
+    expect(result).toEqual(new Map([
+      ['a', 3],
+      ['b', 2],
+      ['c', 1],
+    ]));
+  });
+});
 
 describe('Point', () => {
   it('should return an array of adjacent points', () => {

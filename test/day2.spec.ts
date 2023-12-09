@@ -1,4 +1,4 @@
-import { Game, GamePick, parseLine, solveDay2Part1, solveDay2Part2 } from "./day2";
+import { Game, GamePick, parseLine, solveDay2Part1, solveDay2Part2 } from "../src/day2";
 
 const testInput = [
   'Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green',

@@ -1,4 +1,4 @@
-import { RangeMap, SourceMap, locationForSeed, parseInput, solveDay5Part1, solveDay5Part2 } from './day5';
+import { RangeMap, SourceMap, locationForSeed, parseInput, solveDay5Part1, solveDay5Part2 } from '../src/day5';
 
 const testInput = [
   'seeds: 79 14 55 13',

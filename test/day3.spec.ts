@@ -1,5 +1,5 @@
-import { PartNumber, solveDay3Part1, solveDay3Part2, parseLine } from './day3';
-import { Point } from './Point';
+import { PartNumber, solveDay3Part1, solveDay3Part2, parseLine } from '../src/day3';
+import { Point } from '../src/utils';
 
 const testInput = [
   '467..114..',

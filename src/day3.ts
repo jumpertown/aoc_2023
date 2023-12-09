@@ -1,4 +1,4 @@
-import { Point } from "./Point";
+import { Point } from "./utils";
 
 const parseGrid = (input: string[]): lineParts => {
   const partNumbers: PartNumber[] = [];
