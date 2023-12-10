@@ -19,6 +19,35 @@ export const lcm = (a: number, b: number): number => {
 }
 
 // Location functions
+export type Direction = 'N' | 'E' | 'S' | 'W';
+export const directions: Direction[] = ['N', 'E', 'S', 'W'];
+
+export const clockwise = (direction: Direction): Direction => {
+  switch(direction) {
+    case 'N':
+      return 'E';
+    case 'E':
+      return 'S';
+    case 'S':
+      return 'W';
+    case 'W':
+      return 'N';
+  }
+}
+
+export const antiClockwise = (direction: Direction): Direction => {
+  switch(direction) {
+    case 'N':
+      return 'W';
+    case 'W':
+      return 'S';
+    case 'S':
+      return 'E';
+    case 'E':
+      return 'N';
+  }
+}
+
 export class Point {
   constructor(public x: number, public y: number) {}
 
@@ -26,7 +55,7 @@ export class Point {
     return this.x === point.x && this.y === point.y;
   }
 
-  fromString(pointString: string): Point {
+  static fromString(pointString: string): Point {
     const [x, y] = pointString.split(',');
     return new Point(parseInt(x), parseInt(y));
   }
@@ -46,6 +75,28 @@ export class Point {
       new Point(this.x - 1, this.y),
       new Point(this.x - 1, this.y + 1),
     ];
+  }
+
+  adjacentPointsNoDiag(): Point[] {
+    return [
+      new Point(this.x, this.y + 1),
+      new Point(this.x + 1, this.y),
+      new Point(this.x, this.y - 1),
+      new Point(this.x - 1, this.y),
+    ];
+  }
+
+  move(direction: Direction): Point {
+    switch(direction) {
+      case 'N':
+        return new Point(this.x, this.y + 1);
+      case 'E':
+        return new Point(this.x + 1, this.y);
+      case 'S':
+        return new Point(this.x, this.y - 1);
+      case 'W':
+        return new Point(this.x - 1, this.y);
+    }
   }
 }
 
